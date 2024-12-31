@@ -1,0 +1,21 @@
+
+
+-All the boxes shows in one line 
+display : flex 
+
+
+
+
+-for aligning our item to center with respective to cross axis 
+ align-items: center;
+ 
+
+
+
+-for increasing the size of icon
+ use font-size ;
+
+
+ -for occupying all the area 
+ width : 100% ; 
+

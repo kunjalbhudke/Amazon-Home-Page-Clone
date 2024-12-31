@@ -1,0 +1,11 @@
+.shop-section {
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.shop-section .box{
+    width: 90%;
+}
+.shop-section .box .box-img{
+    width: 90%;
+}
