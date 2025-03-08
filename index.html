@@ -23,23 +23,29 @@
                 <div class="logo"></div>
 
             </div>
-            <div class="nav-address border">
+
+            <div class="nav-address border" onclick="show_location()">
                 <p class="add-first">Deliver to</p>
                 <div class="add-icon">
                     <i class="fa-solid fa-location-dot"></i>
                     <p class="add-second">India</p>
                 </div>
+          
             </div>
+
+
 
             <div class="nav-search">
                 <select class="search-select">
-                    <option>All</option>
+              <option>All</option>
                 </select>
                 <input placeholder="Search Amazon" class="search-input">
                 <div class="search-icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
+
+
 
             <div class="language-container border">
                 <p>English</p>
@@ -68,10 +74,70 @@
             </div>
         </div>
         <div class="panel">
-            <div class="panel-all">
-                <i class="fa-solid fa-bars"></i>
+            <div class="panel-all" >
+                <i class="fa-solid fa-bars openbtn" onclick="openNav()"></i>
                 All
+
+                <!-- Side bar -->
+                <div id="mysidebar" class="sidebar" id="main">
+                    <div class="hello-sign-in">
+                       <p> Hello, sign in</p>
+                       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+                    </div>
+
+                    <div class="list-divs">
+                        <h3>Trending</h3>
+                        <li>Best Sellers</li>
+                        <li>New Releases</li>
+                        <li>Movers and Shakers</li>
+                        
+                    </div>
+                 <div class="list-divs">
+                    <h3>Digital Content and Devices</h3>
+                    <li>Amazon miniTV-Free entertainment</li>
+                    <li>Echo & Alexa</li>
+                    <li>Fire TV</li>
+                    <li>Kindle E-Readers & eBooks</li>
+                    <li>Audible Audiobooks</li>
+                    <li>Amazon Prime Video</li>
+                    <li>Amazon Prime Music</li>
+               
+
+                 </div>
+
+
+                <div class="list-divs">
+                    <h3>Shop by Category</h3>
+                    <li>Mobiles Computers</li>
+                    <li>Tv, Appliances and Electronics</li>
+                    <li>Mens Fashion</li>
+                    <li>Womens Fashion </li>
+                    <li>See all</li>
+                </div>
+
+                <div class="list-divs">
+                    <h3>Programs & Features</h3>
+                    <li>Amazon Pay</li>
+                    <li>Gift crad & mobile recharges</li>
+                    <li>Amazon Launchpad</li>
+                    <li>Amazon Business </li>
+                    <li>See all</li>
+                </div>
+
+                <div class="list-divs">
+                    <h3>Help & Settings</h3>
+                    <li>Your Account</li>
+                    <li>Customer Services</li>
+                    <li id="sign-in">Sign in</li>
+                    
+                </div>
+
+             </div>
+                
             </div>
+
+
+            
             <div class="panel-options">
                 <p>Today's Deals</p>
                 <p> Customer Service</p>
@@ -141,8 +207,6 @@
             </div>
         </div>
         
-
-
 
         <div class="box">
             <div class="box-content">
@@ -333,6 +397,29 @@
     </footer>
 
 
+    <div id="overlay" style="display: none;"></div>
+
+    <div class="location">
+    <div class="header-pop-over">
+        <h4>Choose your location</h4>
+        <a href="javascript:void(0)" id="close-location" onclick="CLose_Location()">X</a>
+    </div>    
+
+    <div class="pop-over-content">
+        <span class="text">Select a delivery location to see product availability and delivery options</span>
+    </div>
+    <button class="address-btn">Sign in to see your address</button>
+    
+    <div class="divider-section">
+        <div class="divider"></div>
+        <h5>or enter an Indian pincode</h5>
+    
+    </div>
+    <input type="text" id="input-location">
+    <button class="input-btn">Apply</button>
+
+
+</div>
     <script src="script.js"></script>
 </body>
 
